@@ -91,19 +91,68 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <a href="#" class="btn btn-light col-12">
+            <a href="index.html" class="btn btn-light col-12">
               <i class="fas fa-arrow-left"></i> Back To Dashboard</a
             >
           </div>
           <div class="col-md-3">
-            <a href="#" class="btn btn-success col-12">
+            <a href="index.html" class="btn btn-success col-12">
               <i class="fas fa-lock"></i> Change Password</a
             >
           </div>
           <div class="col-md-3">
-            <a href="#" class="btn btn-danger col-12">
+            <a href="index.html" class="btn btn-danger col-12">
               <i class="fas fa-trash"></i> Delete Account</a
             >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h4>Edit Profile</h4>
+              </div>
+              <div class="card-body">
+                <form>
+                  <label for="name" class="form-label">Name</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      value="Jack Sparrow"
+                    />
+                  </div>
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      value="test@test.com"
+                    />
+                  </div>
+                  <label for="bio" class="form-label">Bio</label>
+                  <div class="input-group">
+                    <div class="input-group">
+                      <textarea name="editor1" class="form-control">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, inventore ex alias eligendi ratione esse! Inventore qui, nobis omnis doloremque quos, excepturi nam enim dolorum minima animi et ullam soluta facere ab odio illum officiis hic porro reiciendis. Labore, eligendi?</textarea
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3>Your Avatar</h3>
+            <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3" />
+            <button class="btn btn-primary col-12 mb-2">Edit Image</button>
+            <button class="btn btn-danger col-12">Delete Image</button>
           </div>
         </div>
       </div>
@@ -125,6 +174,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script></script>
+    <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+
+    <script>
+      CKEDITOR.replace("editor1", { width: "100%", height: "100%" });
+    </script>
   </body>
 </html>
